@@ -7,8 +7,7 @@
 # [*sample_parameter*]
 #   Explanation of what this parameter affects and what it defaults to.
 #
-class heka (
-) inherits heka::params {
+class heka {
 
   # validate parameters here
 
