@@ -9,4 +9,9 @@ class heka::config {
     purge   => true,
     force   => true,
   }
+
+  file { '/etc/init/heka.conf':
+    ensure => file,
+    source => 'puppet:///modules/heka/etc/init/heka.conf',
+  }
 }
