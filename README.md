@@ -1,6 +1,6 @@
 # heka
 
-Puppet module for heka.
+Puppet module for [heka](https://github.com/mozilla-services/heka).
 
 ## Example usage
 
