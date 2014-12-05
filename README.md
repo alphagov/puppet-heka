@@ -2,6 +2,10 @@
 
 Puppet module for [heka](https://github.com/mozilla-services/heka).
 
+## Packages
+
+You will need to put the heka package in your own APT repository.
+
 ## Example usage
 
 Include with default parameters:
