@@ -1,17 +1,10 @@
 # == Class: heka
 #
-# Full description of class heka here.
+# Manage heka: https://github.com/mozilla-services/heka
 #
 # === Parameters
 #
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#
-class heka (
-) inherits heka::params {
-
-  # validate parameters here
-
+class heka {
   anchor { 'heka::begin': } ->
   class { 'heka::install': } ->
   class { 'heka::config': }

@@ -4,9 +4,7 @@
 # It ensure the service is running
 #
 class heka::service {
-  include heka::params
-
-  service { $heka::params::service_name:
+  service { 'heka':
     ensure     => running,
     enable     => true,
     hasstatus  => true,

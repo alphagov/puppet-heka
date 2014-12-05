@@ -1,0 +1,4 @@
+[HekaRemoteOutput]
+type = "TcpOutput"
+address = "<%= @host -%>:<%= @port -%>"
+message_matcher = "Logger != 'hekad' && Type != 'heka.statmetric'"
