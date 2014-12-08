@@ -1,7 +1,9 @@
 # == Class heka::install
 #
 class heka::install {
+  $package_ensure = $::heka::package_ensure
+
   package { 'heka':
-    ensure => present,
+    ensure => $package_ensure,
   }
 }
