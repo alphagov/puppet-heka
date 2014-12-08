@@ -1,3 +1,6 @@
+UNRELEASED
+- Add `package_ensure` param.
+
 2014-12-05 Release 0.0.1
 - Initial release.
 - Manage package/config/service.

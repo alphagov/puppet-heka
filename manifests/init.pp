@@ -4,7 +4,13 @@
 #
 # === Parameters
 #
-class heka {
+# [*package_ensure*]
+#   Ensure parameter to pass to the package.
+#   Default: present
+#
+class heka (
+  $package_ensure = present,
+) {
   anchor { 'heka::begin': } ->
   class { 'heka::install': } ->
   class { 'heka::config': }
