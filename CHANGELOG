@@ -1,4 +1,4 @@
-UNRELEASED
+2014-12-08 Release 0.1.0
 - Add `package_ensure` param.
 - Add `service_ensure` param.
 
