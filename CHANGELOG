@@ -1,3 +1,6 @@
+2014-12-12 Release 0.2.0
+- Add `protocol` param to `heka::plugin::graphite`.
+
 2014-12-08 Release 0.1.0
 - Add `package_ensure` param.
 - Add `service_ensure` param.
