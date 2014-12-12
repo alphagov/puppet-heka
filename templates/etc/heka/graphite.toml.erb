@@ -1,3 +1,6 @@
 [CarbonOutput]
 address = "<%= @host -%>:<%= @port -%>"
+<% if @protocol -%>
+protocol = "<%= @protocol -%>"
+<% end -%>
 message_matcher = "Type == 'heka.statmetric'"
