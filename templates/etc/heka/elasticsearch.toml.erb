@@ -2,8 +2,26 @@
 server = "<%= @url -%>"
 encoder = "<%= @encoder -%>"
 message_matcher = "Logger != 'hekad' && Type != 'heka.statmetric'"
+<% @output_options.each do |k,v| -%>
+<%= k -%> = <%=
+if [true, false, "true", "false"].include?(v)
+  v
+else
+  Integer(v) rescue "\"#{v}\""
+end
+%>
+<% end -%>
 
 [<%= @encoder -%>]
 type_name = "%{Type}"
 index = "logs-%{2006.01.02}"
 es_index_from_timestamp = true
+<% @encoder_options.each do |k,v| -%>
+<%= k -%> = <%=
+if [true, false, "true", "false"].include?(v)
+  v
+else
+  Integer(v) rescue "\"#{v}\""
+end
+%>
+<% end -%>
