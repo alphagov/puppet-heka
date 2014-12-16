@@ -1,4 +1,4 @@
-UNRELEASED
+2014-12-16 Release 0.3.0
 - Add `encoder_options` and `output_options` params to
   `heka::plugin::elasticsearch`.
 
