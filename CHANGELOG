@@ -1,3 +1,7 @@
+UNRELEASED
+- Add `encoder_options` and `output_options` params to
+  `heka::plugin::elasticsearch`.
+
 2014-12-12 Release 0.2.0
 - Add `protocol` param to `heka::plugin::graphite`.
 
