@@ -1,3 +1,5 @@
+-- This file is controlled via puppet. Any changes you make in here
+-- will be clobbered when puppet is next run.
 --[[
 Parse logstash json_event entries.
 
