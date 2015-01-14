@@ -8,10 +8,12 @@ class heka::config {
     recurse => true,
     purge   => true,
     force   => true,
+    notify  => Class['heka::service'],
   }
 
   file { '/etc/init/heka.conf':
     ensure => file,
     source => 'puppet:///modules/heka/etc/init/heka.conf',
+    notify => Class['heka::restart'],
   }
 }
