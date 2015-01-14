@@ -14,6 +14,6 @@ class heka::service {
     ensure     => $service_ensure,
     enable     => $service_enable,
     hasstatus  => true,
-    hasrestart => true,
+    hasrestart => false,
   }
 }
