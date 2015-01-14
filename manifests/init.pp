@@ -16,6 +16,8 @@ class heka (
   $package_ensure = present,
   $service_ensure = running,
 ) {
+  include heka::restart
+
   anchor { 'heka::begin': } ->
   class { 'heka::install': } ->
   class { 'heka::config': }
@@ -24,5 +26,5 @@ class heka (
 
   Anchor['heka::begin']  ~> Class['heka::service']
   Class['heka::install'] ~> Class['heka::service']
-  Class['heka::config']  ~> Class['heka::service']
+  Class['heka::config']  -> Class['heka::service']
 }
