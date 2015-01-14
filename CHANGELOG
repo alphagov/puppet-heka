@@ -1,3 +1,8 @@
+2015-01-14 Release 0.4.0
+- Raise file descriptor limit for Heka daemon.
+- Restart (rather than reload) on upstart config changes.
+- Add header to config files that are managed by Puppet.
+
 2014-12-16 Release 0.3.0
 - Add `encoder_options` and `output_options` params to
   `heka::plugin::elasticsearch`.
