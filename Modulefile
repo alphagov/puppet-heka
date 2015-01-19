@@ -1,5 +1,5 @@
 name          'alphagov-heka'
-version       '0.4.0'
+version       '0.5.0'
 source        'https://github.com/alphagov/puppet-heka'
 author        'Government Digital Service'
 license       'MIT'
