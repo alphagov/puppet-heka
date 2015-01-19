@@ -3,4 +3,4 @@
 [HekaRemoteOutput]
 type = "TcpOutput"
 address = "<%= @host -%>:<%= @port -%>"
-message_matcher = "Logger != 'hekad' && Type != 'heka.statmetric'"
+message_matcher = "Logger != 'hekad' && Type != 'heka.statmetric'<%= " && #{@matcher_additional}" unless @matcher_additional.empty? -%>"
